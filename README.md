@@ -1,7 +1,7 @@
-## my-jenkins
+# my-jenkins
 
-#  My-Jenkins Docker Automation
-#  使用最新的 jenkins:lts-jdk17 镜像作为基础镜像
+##  My-Jenkins Docker Automation
+##  使用最新的 jenkins:lts-jdk17 镜像作为基础镜像
 
 
 ## 1.目录结构
