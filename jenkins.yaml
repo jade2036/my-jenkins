@@ -1,0 +1,26 @@
+jenkins:
+  systemMessage: "Welcome to Jenkins configured with YAML!"
+  numExecutors: 2
+  scmCheckoutRetryCount: 2
+  mode: NORMAL
+  usageStatistics:
+    allowUsageStatistics: false
+
+tool:
+  git:
+    installations:
+      - home: "/usr/bin/git"
+        name: "Default"
+
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - usernamePassword:
+              scope: GLOBAL
+              id: "jenkins-admin"
+              description: "Admin user"
+              username: "admin"
+              password: "admin"
+
+

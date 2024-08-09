@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  jenkins:
+    build: .
+    image: my-jenkins:lts
+    container_name: my-jenkins-docker
+    ports:
+      - "8091:8080"
+      - "50091:50001"
+    volumes:
+      - /Users/chiyingjie/code/test/jenkins:/var/jenkins_home/workspace/dnmp-php
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+    restart: unless-stopped

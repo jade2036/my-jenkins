@@ -1,0 +1,11 @@
+# List of Jenkins plugins to install
+localization-zh-cn
+workflow-aggregator:latest
+git:latest
+role-strategy:latest
+blueocean:latest
+credentials:latest
+ssh-credentials:latest
+
+
+
